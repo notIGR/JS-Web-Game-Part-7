@@ -36,19 +36,25 @@ const newNonPlayableCharacter = (x, y) => {
     stop()
   };
 
-  const walkNorth = () => {
+  const walkNorth = async (time) => {
     direction = "north";
     element.src = `./assets/red-character/north.gif`;
+    await sleep(time)
+    stop()
   };
 
-  const walkWest = () => {
+  const walkWest = async (time) => {
     direction = "west";
     element.src = `./assets/red-character/west.gif`;
+    await sleep(time)
+    stop()
   };
 
-  const walkSouth = () => {
+  const walkSouth = async (time) => {
     direction = "south";
     element.src = `./assets/red-character/south.gif`;
+    await sleep(time)
+    stop()
   };
 
   const stop = () => {
