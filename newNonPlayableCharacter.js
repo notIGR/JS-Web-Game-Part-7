@@ -23,9 +23,17 @@ const newNonPlayableCharacter = (x, y) => {
 
   setInterval(moveCharacter, 1);
 
-  const walkEast = () => {
+  const sleep = (time) => {
+    return new Promise((resolve) => {
+      setTimeout(resolve, time);
+    });
+  };
+  
+  const walkEast = async (time) => {
     direction = "east";
     element.src = `./assets/red-character/east.gif`;
+    await sleep(time)
+    stop()
   };
 
   const walkNorth = () => {
@@ -57,3 +65,10 @@ const newNonPlayableCharacter = (x, y) => {
     stop: stop,
   };
 };
+const sleep = (time) => {
+  return new Promise((resolve) => {
+    setTimeout(resolve, time);
+  });
+};
+
+
