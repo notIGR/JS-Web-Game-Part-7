@@ -65,10 +65,6 @@ const newNonPlayableCharacter = (x, y) => {
     stop: stop,
   };
 };
-const sleep = (time) => {
-  return new Promise((resolve) => {
-    setTimeout(resolve, time);
-  });
-};
+
 
 
