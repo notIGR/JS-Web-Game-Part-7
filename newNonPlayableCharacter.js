@@ -1,5 +1,5 @@
 const newNonPlayableCharacter = (x, y) => {
-  let element = newImage("assets/red-character/static.gif");
+  const element = newImage("assets/red-character/static.gif");
   element.style.zIndex = 1;
 
   let direction = null;
@@ -63,12 +63,12 @@ const newNonPlayableCharacter = (x, y) => {
   };
 
   return {
-    element: element,
-    walkWest: walkWest,
-    walkNorth: walkNorth,
-    walkEast: walkEast,
-    walkSouth: walkSouth,
-    stop: stop,
+    element,
+    walkWest,
+    walkNorth,
+    walkEast,
+    walkSouth,
+    stop,
   };
 };
 

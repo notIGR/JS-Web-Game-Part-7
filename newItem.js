@@ -1,8 +1,8 @@
 const newItem = (url) => {
-  let item = newImage(url);
+  const item = newImage(url);
   item.addEventListener("click", () => {
     item.remove();
-    let inventoryItem = document.createElement("img");
+    const inventoryItem = document.createElement("img");
     inventoryItem.src = url;
     inventory.append(inventoryItem);
   });

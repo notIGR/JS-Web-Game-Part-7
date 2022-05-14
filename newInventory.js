@@ -1,5 +1,5 @@
 const newInventory = () => {
-  let inventory = document.createElement("div");
+  const inventory = document.createElement("div");
   inventory.style.width = "100%";
   inventory.style.height = "100px";
   inventory.style.display = "flex";
